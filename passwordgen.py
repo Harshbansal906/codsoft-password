@@ -4,7 +4,7 @@ import random
 import string
 
 class PasswordGenerator(Tk):
-    def _init_(self):
+    def __init__(self):
         super()._init_()
         self.title("Password Generator")
         self.resizable(False, False)
@@ -103,5 +103,5 @@ class PasswordGenerator(Tk):
         self.mainloop()
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     PasswordGenerator().run()
